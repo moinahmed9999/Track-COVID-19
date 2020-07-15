@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Track COVID-19</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="world_cases">World Cases</string>
+    <string name="cases">Cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="deaths">Deaths</string>
+    <string name="active">Active</string>
+    <string name="server_issue">Server Issue</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="states">States/UT</string>
+    <string name="india">India</string>
+    <string name="world">World</string>
+    <string name="countries">Countries</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="deaths_per_million">Deaths per\nmillion</string>
+    <string name="cases_per_million">Cases per\nmillion</string>
+    <string name="new_cases">New Cases</string>
+    <string name="new_deaths">New Deaths</string>
+    <string name="recovery_rate">Recovery Rate</string>
+    <string name="fatality_rate">Fatality Rate</string>
+    <string name="district">District</string>
+    <string name="confirmed_cases">Confirmed Cases</string>
+    <string name="helpline">Helpline</string>
+    <string name="covid19">Covid-19</string>
+    <string name="mohfw">MoHFW</string>
+    <string name="about_developer">About Developer</string>
+    <string name="search">Search</string>
+    <string name="news">News</string>
+
+    <string name="covidinfo_header">
+        What is COVID-19?
+    </string>
+
+    <string name="covidinfo">
+        Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered
+        coronavirus.\n\nMost people infected with the COVID-19 virus will experience mild to
+        moderate respiratory illness and recover without requiring special treatment.
+        Older people, and those with underlying medical problems like cardiovascular disease,
+        diabetes, chronic respiratory disease, and cancer are more likely to develop serious
+        illness.
+    </string>
+
+    <string-array name="spinner_array">
+        <item>@string/cases</item>
+        <item>@string/active</item>
+        <item>@string/recovered</item>
+        <item>@string/deaths</item>
+    </string-array>
+</resources>

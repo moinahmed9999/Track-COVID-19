@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/covid19"
+        android:icon="@drawable/ic_coronavirus"
+        android:menuCategory="secondary"
+        android:title="@string/covid19" />
+    <item
+        android:id="@id/moHFWF"
+        android:icon="@drawable/ic_globe"
+        android:menuCategory="secondary"
+        android:title="@string/mohfw" />
+    <item
+        android:id="@id/aboutDeveloper"
+        android:icon="@drawable/ic_developer"
+        android:menuCategory="secondary"
+        android:title="@string/about_developer" />
+</menu>

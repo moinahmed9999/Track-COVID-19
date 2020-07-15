@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.Dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/india"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.India.IndiaFragment"
+        android:label="@string/india"
+        tools:layout="@layout/fragment_india" >
+        <action
+            android:id="@+id/action_india_to_state"
+            app:destination="@id/state" />
+    </fragment>
+    <fragment
+        android:id="@+id/world"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.World.WorldFragment"
+        android:label="@string/world"
+        tools:layout="@layout/fragment_world" >
+        <action
+            android:id="@+id/action_world_to_country"
+            app:destination="@id/country" />
+    </fragment>
+    <fragment
+        android:id="@+id/country"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.World.CountryFragment"
+        android:label="Country"
+        tools:layout="@layout/fragment_country" >
+        <argument
+            android:name="cases"
+            app:argType="string" />
+        <argument
+            android:name="active"
+            app:argType="string" />
+        <argument
+            android:name="recovered"
+            app:argType="string" />
+        <argument
+            android:name="deaths"
+            app:argType="string" />
+        <argument
+            android:name="new_cases"
+            app:argType="string" />
+        <argument
+            android:name="new_deaths"
+            app:argType="string" />
+        <argument
+            android:name="cpm"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="dpm"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="flag"
+            app:argType="string" />
+        <argument
+            android:name="country_name"
+            app:argType="string" />
+        <argument
+            android:name="lat"
+            app:argType="string" />
+        <argument
+            android:name="Long"
+            app:argType="string" />
+        <argument
+            android:name="fatality_rate"
+            app:argType="float" />
+        <argument
+            android:name="recovery_rate"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/state"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.India.StateFragment"
+        android:label="State"
+        tools:layout="@layout/fragment_state" >
+        <argument
+            android:name="state_name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/news"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.News.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_news_to_newsWebView"
+            app:destination="@id/newsWebView" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsWebView"
+        android:name="com.moin.covid19tracker.Fragments.BottomNavigationView.News.NewsWebViewFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news_web_view" >
+        <argument
+            android:name="news_link"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/covid19"
+        android:name="com.moin.covid19tracker.Fragments.NavigationDrawer.Covid19Fragment"
+        android:label="COVID-19"
+        tools:layout="@layout/fragment_covid19" />
+    <fragment
+        android:id="@+id/moHFWF"
+        android:name="com.moin.covid19tracker.Fragments.NavigationDrawer.MoHFWFragment"
+        android:label="Ministry of Health and Family Welfare"
+        tools:layout="@layout/fragment_mo_h_f_w" />
+    <fragment
+        android:id="@+id/aboutDeveloper"
+        android:name="com.moin.covid19tracker.Fragments.NavigationDrawer.AboutDeveloperFragment"
+        android:label="About Developer"
+        tools:layout="@layout/fragment_about_developer" />
+</navigation>
